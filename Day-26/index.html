@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <!-- 
+    
+    asynchronus operation:-
+    ------------------------
+    ->call back
+    ->settimeout
+    ->promises
+    ->async and await
+
+
+    DOM(Document object model):-
+    ----------------------------
+       ->API
+       ->EVENTS
+       ->BOM
+
+       ->OBJECTS
+       ->STRING
+    -->
+</head>
+
+<body>
+
+
+    <script>
+        // let p = document.createElement("p")
+        // p.innerText = "hello there"
+        // document.body.appendChild(p)
+
+    // let div=document.createElement("div")
+    // let p=document.createElement("p")
+    // p.innerText="hello World"
+    // div.appendChild(p)
+    // document.body.appendChild(div)
+
+    //create un order list with diff values ->3 list items
+
+    let ul=document.createElement("ul")
+    for(i=1;i<=3;i++){
+        let li=document.createElement("li")
+        li.innerText=i;
+        ul.appendChild(li)
+    }
+    document.body.appendChild(ul)
+
+
+
+
+    </script>
+</body>
+
+</html>
