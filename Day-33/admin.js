@@ -37,9 +37,6 @@ async function showData(data) {
         <button id=editbtn${student.id}>Edit</button>
         `
         container.appendChild(item)
-    })
-
-    data.forEach(student => {
         let delbtn = document.getElementById(`deletebtn${student.id}`)
         let editbtn = document.getElementById(`editbtn${student.id}`)
         delbtn.onclick = () => {
@@ -49,7 +46,19 @@ async function showData(data) {
         editbtn.onclick = () => {
             editData(student.id)
         }
-    });
+    })
+
+    // data.forEach(student => {
+        // let delbtn = document.getElementById(`deletebtn${student.id}`)
+        // let editbtn = document.getElementById(`editbtn${student.id}`)
+        // delbtn.onclick = () => {
+        //     deleteData(student.id)
+        // }
+
+        // editbtn.onclick = () => {
+        //     editData(student.id)
+        // }
+    // });
 
 }
 //Delete
